@@ -1,0 +1,20 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Container 
+on: push
+
+jobs: 
+  node-docker:
+    runs-on: windows-latest
+    container: 
+      image: node:14-alpine3.15
+    steps: 
+      - name: Log node version
+        run:
+          node -
+          cat /etc/os-release
+          
+      
+    
+    
+
